@@ -1034,6 +1034,48 @@ body, html {
     padding-right: 15px;
   }
 }
+.who-we-are {
+  background: url(../images/nasa-desert-testing.png);
+  background-size: cover;
+  background-position: center 60%;
+  position: relative;
+}
+
+#who-we-are-copy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+  font-family: "Gotham-Rnd-Light";
+  font-size: 16px;
+}
+
+#do_left {
+  background: url(../images/left-iss.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #3c404f;
+  height: 100vh;
+}
+#do_left h1 {
+  padding-top: 43px;
+}
+
+#do_right {
+  background: url(../images/right-iss.png);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: #47433e;
+  height: 100vh;
+}
+#do_right h1 {
+  padding-top: 43px;
+}
+
 .logoheader {
   font-family: "Ailerons";
   color: #fff;
@@ -1109,14 +1151,8 @@ body, html {
   letter-spacing: 20px;
 }
 
-.process {
-  background: url(../images/nasa-desert-testing.png);
-  background-size: cover;
-  background-position: center 60%;
-  position: relative;
-}
-
 .process-box {
+  position: relative;
   width: 120px;
   height: 150px;
   margin: 130px 20px;
@@ -1150,41 +1186,6 @@ body, html {
   font-family: "Gotham-Rnd-Light";
   font-size: 16px;
   letter-spacing: 2.5px;
-}
-
-#process-copy {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  width: 100%;
-  font-family: "Gotham-Rnd-Light";
-  font-size: 16px;
-}
-
-#do_left {
-  background: url(../images/left-iss.png);
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-color: #3c404f;
-  height: 100vh;
-}
-#do_left h1 {
-  padding-top: 43px;
-}
-
-#do_right {
-  background: url(../images/right-iss.png);
-  background-size: contain;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-color: #47433e;
-  height: 100vh;
-}
-#do_right h1 {
-  padding-top: 43px;
 }
 
 @media only screen and (min-width: 768px) {

@@ -48,8 +48,66 @@ body, html {
  }
 
 
+
 //------------------------------------//
-//  1. SPACECAMP SECTION
+//  1. WHO WE ARE SECTION
+//------------------------------------//
+.who-we-are {
+	background: url(../images/nasa-desert-testing.png);
+	background-size: cover;
+	background-position: center 60%;
+	position: relative;
+}
+
+
+
+
+#who-we-are-copy {
+	 position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: $white;
+     width:100%;
+     font-family: $font-body;
+	 font-size:16px;
+}
+
+
+//------------------------------------//
+//  2. WHAT WE DO
+//------------------------------------//
+
+//not sure about this
+#do_left{
+	background: url(../images/left-iss.png);
+background-size:contain;
+	background-position: right;
+	background-repeat: no-repeat;
+		background-color:#3c404f;
+	    height: 100vh;
+	  h1{
+	  	padding-top: 43px;
+	  }
+}
+#do_right{
+	background: url(../images/right-iss.png);
+background-size:contain;
+	background-position: left;
+	background-repeat: no-repeat;
+		background-color:#47433e;
+	    height: 100vh;
+	  h1{
+	  	padding-top: 43px;
+	  }
+}
+//might need to tweak.
+
+
+//END PROCESS SECTION
+
+//------------------------------------//
+//  3. SPACECAMP SECTION
 //------------------------------------//
 
 .logoheader{
@@ -123,20 +181,9 @@ body, html {
 		letter-spacing: 20px;
 	}
 }
-// END SPACECAMP SECTION
-
-//------------------------------------//
-//  2. PROCESS SECTION
-//------------------------------------//
-.process {
-	background: url(../images/nasa-desert-testing.png);
-	background-size: cover;
-	background-position: center 60%;
-	position: relative;
-}
-
 
 .process-box {
+	position: relative;
 	width: 120px;
 	height: 150px;
 	margin: 130px 20px;
@@ -144,17 +191,17 @@ body, html {
 	display: inline-block;
 	text-align: center;
 	color: $white;
-	  border-radius: 8px;
+  border-radius: 8px;
 	.process-box-top-half {
 		height: 75px;
 		position: relative;
 	}
-    .process-box-top-half h3{
+  .process-box-top-half h3{
 		position: absolute;
-  		top: 50%;
-  		left: 50%;
-  		transform: translate(-50%, -50%);
-  		font-size:36px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size:36px;
 	}
 	.process-box-bottom-half {
 		height: 75px;
@@ -171,50 +218,7 @@ body, html {
 	    letter-spacing: 2.5px;
 	}
 }
-
-#process-copy {
-	 position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     color: $white;
-     width:100%;
-     font-family: $font-body;
-	 font-size:16px;
-}
-
-
-//------------------------------------//
-//  3. WHAT WE DO
-//-
-
-//not sure about this
-#do_left{
-	background: url(../images/left-iss.png);
-background-size:contain;
-	background-position: right;
-	background-repeat: no-repeat;
-		background-color:#3c404f;
-	    height: 100vh;
-	  h1{
-	  	padding-top: 43px;
-	  }
-}
-#do_right{
-	background: url(../images/right-iss.png);
-background-size:contain;
-	background-position: left;
-	background-repeat: no-repeat;
-		background-color:#47433e;
-	    height: 100vh;
-	  h1{
-	  	padding-top: 43px;
-	  }
-}
-//might need to tweak.
-
-
-//END PROCESS SECTION
+// END SPACECAMP SECTION
 
 //------------------------------------//
 //  4. CAPTAIN'S LOG SECTION
