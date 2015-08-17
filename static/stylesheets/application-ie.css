@@ -2,6 +2,11 @@
   spaceBase version: 1.0.1
   http://spacebase.space150.com
 */
+/*
+$primary:      #7abcb5; // light teal
+$secondary:    #41a29c; // dark teal
+$tertiary:     #e48d38; // orange
+*/
 /* http://meyerweb.com/eric/tools/css/reset/
  *    v2.0 | 20110126
  *       License: none (public domain)
@@ -111,11 +116,11 @@ table {
 }
 
 .one-third, .two-sixths, .four-twelfths {
-  width: 33.3333333333%;
+  width: 33.33333%;
 }
 
 .two-thirds, .four-sixths, .eight-twelfths {
-  width: 66.6666666667%;
+  width: 66.66667%;
 }
 
 .one-quarter, .two-eighths, .three-twelfths {
@@ -143,11 +148,11 @@ table {
 }
 
 .one-sixth, .two-twelfths {
-  width: 16.6666666667%;
+  width: 16.66667%;
 }
 
 .five-sixths, .ten-twelfths {
-  width: 83.3333333333%;
+  width: 83.33333%;
 }
 
 .one-eighth {
@@ -183,19 +188,19 @@ table {
 }
 
 .one-twelfth {
-  width: 8.3333333333%;
+  width: 8.33333%;
 }
 
 .five-twelfths {
-  width: 41.6666666667%;
+  width: 41.66667%;
 }
 
 .seven-twelfths {
-  width: 58.3333333333%;
+  width: 58.33333%;
 }
 
 .eleven-twelfths {
-  width: 91.6666666667%;
+  width: 91.66667%;
 }
 
 [class*="push--"] {
@@ -211,11 +216,11 @@ table {
 }
 
 .push--one-third, .push--two-sixths, .push--four-twelfths {
-  left: 33.3333333333%;
+  left: 33.33333%;
 }
 
 .push--two-thirds, .push--four-sixths, .push--eight-twelfths {
-  left: 66.6666666667%;
+  left: 66.66667%;
 }
 
 .push--one-quarter, .push--two-eighths, .push--three-twelfths {
@@ -243,11 +248,11 @@ table {
 }
 
 .push--one-sixth, .push--two-twelfths {
-  left: 16.6666666667%;
+  left: 16.66667%;
 }
 
 .push--five-sixths, .push--ten-twelfths {
-  left: 83.3333333333%;
+  left: 83.33333%;
 }
 
 .push--one-eighth {
@@ -283,19 +288,19 @@ table {
 }
 
 .push--one-twelfth {
-  left: 8.3333333333%;
+  left: 8.33333%;
 }
 
 .push--five-twelfths {
-  left: 41.6666666667%;
+  left: 41.66667%;
 }
 
 .push--seven-twelfths {
-  left: 58.3333333333%;
+  left: 58.33333%;
 }
 
 .push--eleven-twelfths {
-  left: 91.6666666667%;
+  left: 91.66667%;
 }
 
 [class*="pull--"] {
@@ -311,11 +316,11 @@ table {
 }
 
 .pull--one-third, .pull--two-sixths, .pull--four-twelfths {
-  right: 33.3333333333%;
+  right: 33.33333%;
 }
 
 .pull--two-thirds, .pull--four-sixths, .pull--eight-twelfths {
-  right: 66.6666666667%;
+  right: 66.66667%;
 }
 
 .pull--one-quarter, .pull--two-eighths, .pull--three-twelfths {
@@ -343,11 +348,11 @@ table {
 }
 
 .pull--one-sixth, .pull--two-twelfths {
-  right: 16.6666666667%;
+  right: 16.66667%;
 }
 
 .pull--five-sixths, .pull--ten-twelfths {
-  right: 83.3333333333%;
+  right: 83.33333%;
 }
 
 .pull--one-eighth {
@@ -383,19 +388,19 @@ table {
 }
 
 .pull--one-twelfth {
-  right: 8.3333333333%;
+  right: 8.33333%;
 }
 
 .pull--five-twelfths {
-  right: 41.6666666667%;
+  right: 41.66667%;
 }
 
 .pull--seven-twelfths {
-  right: 58.3333333333%;
+  right: 58.33333%;
 }
 
 .pull--eleven-twelfths {
-  right: 91.6666666667%;
+  right: 91.66667%;
 }
 
 .island,
@@ -684,14 +689,14 @@ img[height] {
   src: url("../fonts/Ailerons.ttf");
 }
 html {
-  font: 1em/1.75 Arial, Helvetica, sans-serif;
+  font: 1em/1.75 "Gotham-Rnd-Light";
   color: #000;
   background: #fff;
   -webkit-tap-highlight-color: transparent;
 }
 
 a {
-  color: #7abcb5;
+  color: #3D4150;
   text-decoration: none;
 }
 a:hover {
@@ -708,7 +713,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Ailerons";
   font-weight: normal;
 }
 
@@ -809,7 +814,7 @@ input[type="checkbox"]:focus {
   width: 100%;
   height: 2.5em;
   padding: .2em 1em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Gotham-Rnd-Light";
   font-size: 16px;
   line-height: 1.75;
   color: #666;
@@ -831,17 +836,17 @@ input[type="checkbox"]:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .form-control:-moz-placeholder {
-  color: #7abcb5;
+  color: #3D4150;
 }
 .form-control::-moz-placeholder {
   opacity: 1;
-  color: #7abcb5;
+  color: #3D4150;
 }
 .form-control:-ms-input-placeholder {
-  color: #7abcb5;
+  color: #3D4150;
 }
 .form-control::-webkit-input-placeholder {
-  color: #7abcb5;
+  color: #3D4150;
 }
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
   background-color: #ccc;
@@ -987,7 +992,7 @@ body, html {
 }
 
 .logoheader {
-  font-family: 'Ailerons';
+  font-family: "Ailerons";
   color: #fff;
   font-size: 24px;
   position: absolute;
@@ -1157,7 +1162,7 @@ body, html {
   transform: translate(-50%, -50%);
 }
 #capt-log span {
-  font-family: 'Ailerons';
+  font-family: "Ailerons";
   font-size: 36px;
 }
 
@@ -1407,7 +1412,7 @@ Main components
   padding: 0.1 0.5em 0.5em;
   color: #fff;
   font-size: 16px;
-  font-family: 'Gotham-Rnd-Light';
+  font-family: "Gotham-Rnd-Light";
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
@@ -1434,7 +1439,7 @@ Main components
   position: absolute;
   height: 4px;
   width: 4px;
-  background-color: #7abcb5;
+  background-color: #3D4150;
   border-radius: 50%;
   left: 50%;
   top: 50%;
@@ -1493,13 +1498,13 @@ Main components
 .touch #cd-vertical-nav a {
   display: block;
   padding: 1em;
-  border-bottom: 1px solid rgba(122, 188, 181, 0.1);
+  border-bottom: 1px solid rgba(61, 65, 80, 0.1);
 }
 .touch #cd-vertical-nav a span:first-child {
   display: none;
 }
 .touch #cd-vertical-nav a.is-selected span:last-child {
-  color: #e48d38;
+  color: #D8D8D2;
 }
 .touch #cd-vertical-nav.open {
   -moz-transform: scale(1);
@@ -1511,10 +1516,10 @@ Main components
   background-color: transparent;
 }
 .touch #cd-vertical-nav.open + .cd-nav-trigger span {
-  background-color: rgba(122, 188, 181, 0);
+  background-color: rgba(61, 65, 80, 0);
 }
 .touch #cd-vertical-nav.open + .cd-nav-trigger span::before, .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
-  background-color: #7abcb5;
+  background-color: #3d4150;
   height: 3px;
   width: 20px;
   border-radius: 0;
@@ -1564,7 +1569,7 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(228, 141, 56, 0.8);
+  background: rgba(216, 216, 210, 0.8);
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
@@ -1642,7 +1647,7 @@ Main components
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #e18022;
+  background-color: #ccccc4;
 }
 
 .cd-trigger {
@@ -1816,7 +1821,7 @@ Main components
   opacity: .2;
 }
 .no-touch .cd-slider-navigation li a:hover {
-  background: rgba(228, 141, 56, 0.8);
+  background: rgba(216, 216, 210, 0.8);
   opacity: 1;
 }
 .touch .cd-slider-navigation li a {
@@ -1851,7 +1856,7 @@ Main components
 .cd-item-info p {
   line-height: 1.6;
   margin: 1em 0;
-  color: #bededb;
+  color: #69708a;
 }
 .cd-item-info .cd-item-action li {
   display: inline-block;
@@ -1866,11 +1871,11 @@ Main components
   border-radius: 0.25em;
   border: none;
   padding: .6em 1.2em;
-  background-color: #41a29c;
-  color: #e48d38;
+  background-color: #FDE766;
+  color: #D8D8D2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Gotham-Rnd-Light";
   font-size: 16px;
   font-size: 1rem;
   cursor: pointer;
@@ -1959,7 +1964,7 @@ Main components
   display: inline-block;
   height: 4px;
   width: 20px;
-  background: #e48d38;
+  background: #D8D8D2;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }

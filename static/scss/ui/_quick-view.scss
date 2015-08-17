@@ -126,7 +126,7 @@ Main components
 	width: 100%;
 	bottom: 0;
 	left: 0;
-	background: rgba(#000, .1);
+	background: rgba($black, .1);
 	text-align: center;
 	@include font-smoothing;
 	color: $quaternary;
@@ -135,7 +135,7 @@ Main components
 	@include transition(opacity .2s, background-color .2s);
 
 	.no-touch &:hover {
-		background: rgba(#000, .2);
+		background: rgba($black, .2);
 	}
 
 	@include media-query(desk-and-up) {
@@ -187,7 +187,7 @@ Main components
 		&.animate-width {
 			/* class added at the end of the first zoom-in animation */
 			background-color: $quaternary;
-			box-shadow: 0 0 30px rgba(#000, .2);
+			box-shadow: 0 0 30px rgba($black, .2);
 			@include transition(box-shadow .3s);
 		}
 	}

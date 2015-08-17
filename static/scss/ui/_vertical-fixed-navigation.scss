@@ -55,7 +55,7 @@ Main components
 .cd-section {
 	min-height: 100%;
 	position: relative;
-	
+
 }
 
 .cd-scroll-down {
@@ -105,7 +105,7 @@ Main components
 		}
 
 		&.is-selected .cd-dot {
-			background-color: #fff;
+			background-color: $white;
 		}
 	}
 
@@ -116,7 +116,7 @@ Main components
 		height: 12px;
 		width: 12px;
 		border-radius: 50%;
-		background-color: #FDE766;
+		background-color: $secondary;
 		-webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
 		-moz-transition: -moz-transform 0.2s, background-color 0.5s;
 		transition: transform 0.2s, background-color 0.5s;
@@ -127,9 +127,9 @@ Main components
 		position: relative;
 		margin-right: 10px;
 		padding: .1.5em .5em;
-		color: #fff;
+		color: $white;
 		font-size:16px;
-		 font-family: 'Gotham-Rnd-Light';
+		 font-family: $font-body;
 		-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
 		-moz-transition: -moz-transform 0.2s, opacity 0.2s;
 		transition: transform 0.2s, opacity 0.2s;

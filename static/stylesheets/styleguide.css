@@ -2,6 +2,11 @@
   spaceBase version: 1.0.1
   http://spacebase.space150.com
 */
+/*
+$primary:      #7abcb5; // light teal
+$secondary:    #41a29c; // dark teal
+$tertiary:     #e48d38; // orange
+*/
 .sg-landmark {
   margin-bottom: 84px;
 }
