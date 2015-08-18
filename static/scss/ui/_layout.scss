@@ -165,7 +165,7 @@ background-size:contain;
     border-radius: 2px;
 }
 .spacecamp {
-	h1 {
+	.covervid-content {
 		position: absolute;
 		text-align: center;
 		left: 50%;
@@ -173,12 +173,15 @@ background-size:contain;
 		top: 50%;
   	    transform: translateX(-50%) translateY(-50%);
 		color: $white;
-		font-family: $font-body;
-		font-size:36px;
-		letter-spacing: 20px;
+		width: 100%;
 	}
 }
-
+#covervid-header {
+	position: relative;
+	font-family: $font-head;
+	font-size: 3.6rem;
+	letter-spacing: 20px;
+}
 .process-box {
 	position: relative;
 	width: 120px;
@@ -194,7 +197,7 @@ background-size:contain;
 		position: relative;
 	}
   .process-box-top-half h3{
-		position: absolute;
+		position: relative;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -206,7 +209,7 @@ background-size:contain;
 		position: relative;
 	}
 	.process-box-bottom-half p{
-		 position: absolute;
+		 position: relative;
   		top: 50%;
   		left: 50%;
   		transform: translate(-50%, -50%);

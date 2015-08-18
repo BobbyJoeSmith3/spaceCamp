@@ -1095,7 +1095,7 @@ body, html {
   border-radius: 2px;
 }
 
-.spacecamp h1 {
+.spacecamp .covervid-content {
   position: absolute;
   text-align: center;
   left: 50%;
@@ -1103,8 +1103,13 @@ body, html {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   color: #fff;
-  font-family: "Gotham-Rnd-Light";
-  font-size: 36px;
+  width: 100%;
+}
+
+#covervid-header {
+  position: relative;
+  font-family: "Ailerons";
+  font-size: 3.6rem;
   letter-spacing: 20px;
 }
 
@@ -1124,7 +1129,7 @@ body, html {
   position: relative;
 }
 .process-box .process-box-top-half h3 {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1136,7 +1141,7 @@ body, html {
   position: relative;
 }
 .process-box .process-box-bottom-half p {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
