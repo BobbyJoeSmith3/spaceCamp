@@ -19,7 +19,7 @@ html {
 }
 
 a {
-  color: $primary;
+  color: $white;
   text-decoration: none;
 
   &:hover { text-decoration: underline; }
@@ -67,7 +67,7 @@ h4, .h4 {
 h5, .h5 {
   // @include rem(font-size, .875);
   font-family: 'Gotham-Rnd-Light';
-    
+
 }
 @include media-query(lap-and-up) {
   h1, .h1 { @include rem(font-size, 3.6); }
