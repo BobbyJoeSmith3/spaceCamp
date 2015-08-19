@@ -223,48 +223,36 @@ background-size:contain;
 //------------------------------------//
 //  4. CAPTAIN'S LOG SECTION
 //------------------------------------//
-@include media-query('lap-and-up') {
-	// #capt-log-banner {
-	// 	position: absolute;
-	// 	top: 60px;
-	// 	padding: 10px 20px;
-	// 	background-color: #355592;
-	// 	color: $white;
-	// 	text-align: center;
-	// }
 
-	.one-whole h1{
-		    padding-top: 43px;
+.one-whole h1{
+	    padding-top: 43px;
 
+}
+
+#capt-log {
+	font-family: $font-body;
+	font-size:16px;
+	color:$white;
+	p{
+     text-align: center;
+       position: absolute;
+		 top: 50%;
+		 left: 50%;
+		 width: 500px;
+		 transform: translate(-50%, -50%);
 	}
-
-	#capt-log {
-		font-family: $font-body;
-		font-size:16px;
-		color:$white;
-		p{
-	     text-align: center;
-         position: absolute;
-  		 top: 50%;
- 		 left: 50%;
- 		 width: 500px;
- 		 transform: translate(-50%, -50%);
-		}
-		span{
-		font-family: $font-head;
-     	font-size:36px;
-		}
-	}
-	// #capt-image {
-	// 	position: relative;
-	// }
-	#captains-log{
-	background: url(../images/crowd.jpg);
-	background-size:cover;
-	background-position: center center;
-	background-repeat: no-repeat;
+	span{
+	font-family: $font-head;
+   	font-size:36px;
 	}
 }
+#captains-log{
+background: url(../images/crowd.jpg);
+background-size:cover;
+background-position: center center;
+background-repeat: no-repeat;
+}
+
 //END CAPTAIN'S LOG SECTION
 
 //------------------------------------//

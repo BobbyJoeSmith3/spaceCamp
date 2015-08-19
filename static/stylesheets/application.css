@@ -1192,36 +1192,35 @@ body, html {
   letter-spacing: 2.5px;
 }
 
-@media only screen and (min-width: 768px) {
-  .one-whole h1 {
-    padding-top: 43px;
-  }
-
-  #capt-log {
-    font-family: "Gotham-Rnd-Light";
-    font-size: 16px;
-    color: #fff;
-  }
-  #capt-log p {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    transform: translate(-50%, -50%);
-  }
-  #capt-log span {
-    font-family: "Ailerons";
-    font-size: 36px;
-  }
-
-  #captains-log {
-    background: url(../images/crowd.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
+.one-whole h1 {
+  padding-top: 43px;
 }
+
+#capt-log {
+  font-family: "Gotham-Rnd-Light";
+  font-size: 16px;
+  color: #fff;
+}
+#capt-log p {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+}
+#capt-log span {
+  font-family: "Ailerons";
+  font-size: 36px;
+}
+
+#captains-log {
+  background: url(../images/crowd.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 #cadets {
   background-color: #D8D8D2;
   color: #3D4150;
