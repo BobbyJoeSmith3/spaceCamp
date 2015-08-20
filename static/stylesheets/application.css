@@ -739,6 +739,11 @@ a:hover {
   text-decoration: underline;
 }
 
+p {
+  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
+}
+
 i {
   font-style: normal;
 }
@@ -754,6 +759,7 @@ h6, .h6 {
 }
 
 h1, .h1 {
+  font-size: 1.875rem;
   font-family: 'Ailerons';
   word-spacing: 20px;
   color: #fff;
@@ -765,15 +771,19 @@ h2, .h2 {
 }
 
 h3, .h3 {
+  font-size: 1rem;
+  line-height: 1.4;
   font-family: 'Ailerons';
   word-spacing: 20px;
 }
 
 h4, .h4 {
+  font-size: 0.875rem;
   font-family: 'Ailerons';
 }
 
 h5, .h5 {
+  font-size: 0.875rem;
   font-family: 'Gotham-Rnd-Light';
 }
 
@@ -1027,12 +1037,17 @@ body, html {
   height: 100%;
 }
 
+.gutter {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 @media only screen and (max-width: 767px) {
   .gutter {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
+
 .who-we-are {
   background: url(../images/nasa-desert-testing.png);
   background-size: cover;
@@ -1148,18 +1163,11 @@ body, html {
   width: 100%;
 }
 
-#covervid-header {
-  position: relative;
-  font-family: "Ailerons";
-  font-size: 3.6rem;
-  letter-spacing: 20px;
-}
-
 .process-box {
   position: relative;
   width: 120px;
   height: 150px;
-  margin: 130px 20px;
+  margin: 30px 20px;
   border: 3px solid #fff;
   display: inline-block;
   text-align: center;
@@ -1200,18 +1208,13 @@ body, html {
   font-family: "Gotham-Rnd-Light";
   font-size: 16px;
   color: #fff;
-}
-#capt-log p {
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   transform: translate(-50%, -50%);
-}
-#capt-log span {
-  font-family: "Ailerons";
-  font-size: 36px;
 }
 
 #captains-log {
@@ -1239,6 +1242,77 @@ body, html {
 #spacecadet-headline {
   padding-top: 43px;
   color: #3D4150;
+}
+
+/* Caption Style 7 */
+.griddle {
+  padding: 20px 20px 100px 20px;
+}
+
+.griddle figure {
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.griddle figure img {
+  display: block;
+  position: relative;
+}
+
+.griddle figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background: #2c3f52;
+  color: #ed4e6e;
+}
+
+.cs-style-7 figure img {
+  z-index: 10;
+  width: 100%;
+  max-width: none;
+}
+
+.cs-style-7 figcaption {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+  -moz-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+  transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 0 0px #2c3f52;
+  text-align: center;
+}
+
+.no-touch .cs-style-7 figure:hover figcaption,
+.cs-style-7 figure.cs-hover figcaption {
+  opacity: 1;
+  height: 130%;
+  box-shadow: 0 0 0 10px #2c3f52;
+}
+
+.cs-style-7 figcaption a {
+  opacity: 0;
+  -webkit-transition: opacity 0s;
+  -moz-transition: opacity 0s;
+  transition: opacity 0s;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.no-touch .cs-style-7 figure:hover figcaption a,
+.cs-style-7 figure.cs-hover figcaption a {
+  -webkit-transition: opacity 0.3s 0.2s;
+  -moz-transition: opacity 0.3s 0.2s;
+  transition: opacity 0.3s 0.2s;
+  opacity: 1;
 }
 
 #enlist {

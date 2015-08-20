@@ -24,7 +24,9 @@ a {
 
   &:hover { text-decoration: underline; }
 }
-
+p {
+  @include rem(margin-bottom, $base-spacing-unit, $base-font-size--mobile);
+}
 i { font-style: normal; }
 
 h1, .h1,
@@ -38,7 +40,7 @@ h6, .h6 {
 }
 
 h1, .h1 {
-  // @include rem(font-size, 1.875);
+  @include rem(font-size, 1.875);
   font-family: 'Ailerons';
   word-spacing: 20px;
   color:$white;
@@ -50,22 +52,22 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  // @include rem(font-size, 1);
-  // line-height: 1.4;
+  @include rem(font-size, 1);
+  line-height: 1.4;
     font-family: 'Ailerons';
      word-spacing: 20px;
 
 }
 
 h4, .h4 {
-  // @include rem(font-size, .875);
+  @include rem(font-size, .875);
    font-family: 'Ailerons';
 
 
 }
 
 h5, .h5 {
-  // @include rem(font-size, .875);
+  @include rem(font-size, .875);
   font-family: 'Gotham-Rnd-Light';
 
 }

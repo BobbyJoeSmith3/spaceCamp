@@ -40,8 +40,10 @@ body, html {
 // END example space150 layout
 
 //15px left and right gutter when viewed on handheld devices
- @include media-query(below-lap) {
-	 .gutter  {
+.gutter  {
+	max-width: 1024px;
+	margin: 0 auto;
+ 	 @include media-query(below-lap) {
 		 padding-left:15px;
 		 padding-right:15px;
 	 }
@@ -176,17 +178,11 @@ background-size:contain;
 		width: 100%;
 	}
 }
-#covervid-header {
-	position: relative;
-	font-family: $font-head;
-	font-size: 3.6rem;
-	letter-spacing: 20px;
-}
 .process-box {
 	position: relative;
 	width: 120px;
 	height: 150px;
-	margin: 130px 20px;
+	margin: 30px 20px;
 	border: 3px solid $white;
 	display: inline-block;
 	text-align: center;
@@ -232,18 +228,13 @@ background-size:contain;
 	font-family: $font-body;
 	font-size:16px;
 	color:$white;
-	p{
-     text-align: center;
-       position: absolute;
-		 top: 50%;
-		 left: 50%;
-		 width: 500px;
-		 transform: translate(-50%, -50%);
-	}
-	span{
-	font-family: $font-head;
-   	font-size:36px;
-	}
+	 text-align: center;
+	   position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 max-width: 500px;
+	 width: 100%;
+	 transform: translate(-50%, -50%);
 }
 #captains-log{
 background: url(../images/crowd.jpg);
@@ -274,13 +265,88 @@ background-repeat: no-repeat;
 
 }
 
-
 #spacecadet-headline{
 	padding-top: 43px;
 		color:$primary;
 }
 
+/* Caption Style 7 */
+.griddle {
+	padding: 20px 20px 100px 20px;
+}
 
+.griddle figure {
+	margin: 0;
+	position: relative;
+	z-index: 2;
+}
+
+.griddle figure img {
+	display: block;
+	position: relative;
+}
+
+.griddle figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #2c3f52;
+	color: #ed4e6e;
+}
+
+// .griddle figcaption a {
+// 	text-align: center;
+// 	padding: 5px 10px;
+// 	border-radius: 2px;
+// 	background: #ed4e6e;
+// }
+
+.cs-style-7 figure img {
+	z-index: 10;
+	width: 100%;
+	max-width: none;
+}
+
+.cs-style-7 figcaption {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+	-moz-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+	transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+	box-shadow: 0 0 0 0px #2c3f52;
+	text-align: center;
+}
+
+.no-touch .cs-style-7 figure:hover figcaption,
+.cs-style-7 figure.cs-hover figcaption {
+	opacity: 1;
+	height: 130%;
+	box-shadow: 0 0 0 10px #2c3f52;
+}
+
+.cs-style-7 figcaption a {
+	opacity: 0;
+	-webkit-transition: opacity 0s;
+	-moz-transition: opacity 0s;
+	transition: opacity 0s;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+}
+
+.no-touch .cs-style-7 figure:hover figcaption a,
+.cs-style-7 figure.cs-hover figcaption a {
+	-webkit-transition: opacity 0.3s 0.2s;
+	-moz-transition: opacity 0.3s 0.2s;
+	transition: opacity 0.3s 0.2s;
+	opacity: 1;
+}
 
 //------------------------------------//
 //  6. ENLIST SECTION
