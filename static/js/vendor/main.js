@@ -53,3 +53,26 @@ jQuery(document).ready(function($){
         );
 	}
 });
+
+
+//########################################/
+//	flipclock
+//########################################/
+var clock;
+
+$(document).ready(function() {
+
+	// Grab the current date
+	var currentDate = new Date();
+
+	// Set some date in the future
+	var futureDate  = new Date(2015, 09, 04, 17, 30);
+
+	// Calculate the difference in seconds between the future and current date
+	var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+	clock = $('.spaceClock').FlipClock(diff, {
+		// ... your options here
+		countdown: true
+	});
+});

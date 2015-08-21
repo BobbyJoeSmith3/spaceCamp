@@ -60,6 +60,16 @@ body, html {
 	background-position: center 60%;
 	position: relative;
 }
+.spaceClock-wrapper {
+	margin: 0 auto;
+	@include media-query(hand-and-up){
+		width:$hand-start;
+	}
+	@include media-query(lap-and-up){
+		width:$lap-start;
+	}
+
+}
 
 #who-we-are-copy {
 	 position: absolute;
