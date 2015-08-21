@@ -62,11 +62,9 @@ body, html {
 }
 .spaceClock-wrapper {
 	margin: 0 auto;
-	@include media-query(hand-and-up){
-		width:$hand-start;
-	}
-	@include media-query(lap-and-up){
-		width:$lap-start;
+	@include media-query(below-lap){
+	  transform:scale(.5,.5) translateX(-50%);
+	  width: 200%;
 	}
 
 }

@@ -716,16 +716,8 @@ img[height] {
   font-family: 'Ailerons';
   src: url("../fonts/Ailerons.ttf");
 }
-@font-face {
-  font-family: 'Gotham-Rnd-Light';
-  src: url("../fonts/GothamRnd-Light.otf");
-}
-@font-face {
-  font-family: 'Ailerons';
-  src: url("../fonts/Ailerons.ttf");
-}
 html {
-  font: 1em/1.75 "Gotham-Rnd-Light";
+  font: 1em/1.75 "Gotham-Rnd-Light", Arial, Helvetica, sans-serif;
   color: #000;
   background: #fff;
   -webkit-tap-highlight-color: transparent;
@@ -754,37 +746,38 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Ailerons";
+  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
+  font-family: "Ailerons", Arial, Helvetica, sans-serif;
   font-weight: normal;
 }
 
 h1, .h1 {
   font-size: 1.875rem;
-  font-family: 'Ailerons';
+  line-height: 1.1;
   word-spacing: 20px;
   color: #fff;
 }
 
 h2, .h2 {
-  font-size: 1.25rem;
+  font-size: 1.875rem;
   line-height: 1.2;
+  word-spacing: 20px;
 }
 
 h3, .h3 {
   font-size: 1rem;
   line-height: 1.4;
-  font-family: 'Ailerons';
   word-spacing: 20px;
 }
 
 h4, .h4 {
   font-size: 0.875rem;
-  font-family: 'Ailerons';
 }
 
 h5, .h5 {
   font-size: 0.875rem;
-  font-family: 'Gotham-Rnd-Light';
+  font-family: "Gotham-Rnd-Light", Arial, Helvetica, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -793,7 +786,7 @@ h5, .h5 {
   }
 
   h2, .h2 {
-    font-size: 2.4rem;
+    font-size: 3.6rem;
   }
 
   h3, .h3 {
@@ -861,7 +854,7 @@ input[type="checkbox"]:focus {
   width: 100%;
   height: 2.5em;
   padding: .2em 1em;
-  font-family: "Gotham-Rnd-Light";
+  font-family: "Gotham-Rnd-Light", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.75;
   color: #666;
@@ -1003,6 +996,10 @@ input[type="checkbox"],
   opacity: 0.65;
 }
 
+.btn--alt {
+  font-family: "Ailerons", Arial, Helvetica, sans-serif;
+}
+
 body {
   min-width: 320px;
 }
@@ -1058,14 +1055,10 @@ body, html {
 .spaceClock-wrapper {
   margin: 0 auto;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 767px) {
   .spaceClock-wrapper {
-    width: 480px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .spaceClock-wrapper {
-    width: 768px;
+    transform: scale(0.5, 0.5) translateX(-50%);
+    width: 200%;
   }
 }
 
@@ -1076,7 +1069,7 @@ body, html {
   transform: translate(-50%, -50%);
   color: #fff;
   width: 100%;
-  font-family: "Gotham-Rnd-Light";
+  font-family: "Gotham-Rnd-Light", Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
@@ -1105,7 +1098,7 @@ body, html {
 }
 
 .logoheader {
-  font-family: "Ailerons";
+  font-family: "Ailerons", Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 24px;
   position: absolute;
@@ -1209,7 +1202,7 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Gotham-Rnd-Light";
+  font-family: "Gotham-Rnd-Light", Arial, Helvetica, sans-serif;
   font-size: 16px;
   letter-spacing: 2.5px;
 }
@@ -1219,7 +1212,7 @@ body, html {
 }
 
 #capt-log {
-  font-family: "Gotham-Rnd-Light";
+  font-family: "Gotham-Rnd-Light", Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #fff;
   text-align: center;
@@ -1552,7 +1545,7 @@ Main components
   padding: 0.1 0.5em 0.5em;
   color: #fff;
   font-size: 16px;
-  font-family: "Gotham-Rnd-Light";
+  font-family: "Gotham-Rnd-Light", Arial, Helvetica, sans-serif;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
@@ -1608,7 +1601,7 @@ Main components
 
 .touch #cd-vertical-nav {
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   right: 5%;
   bottom: 30px;
   width: 90%;
@@ -2085,14 +2078,8 @@ html.remodal-is-locked {
 .flip-clock-wrapper {
   text-align: center;
   position: relative;
-  width: 650px;
+  width: 530px;
   margin: 0 auto;
-}
-@media only screen and (max-width: 767px) {
-  .flip-clock-wrapper {
-    transform: scale(0.5, 0.5);
-    width: 70%;
-  }
 }
 
 .flip-clock-wrapper:before,

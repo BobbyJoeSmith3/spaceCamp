@@ -69,8 +69,8 @@ $state-success:  #468847;
 $state-error:    #b94a48;
 
 // Fonts
-$font-body: 'Gotham-Rnd-Light';
-$font-head: 'Ailerons';
+$font-body: 'Gotham-Rnd-Light', Arial, Helvetica, sans-serif;
+$font-head: 'Ailerons', Arial, Helvetica, sans-serif;
 
 // Examples for custom @font-face (see _fonts.scss for declaration)
 //$font-body:  "Source Sans Pro", Arial, Helvetica, sans-serif;
