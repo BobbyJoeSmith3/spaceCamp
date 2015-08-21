@@ -1271,6 +1271,10 @@ body, html {
   opacity: 1;
 }
 
+.modal-body-copy {
+  text-align: left;
+}
+
 #enlist {
   background: url(../images/people.jpg);
   background-size: cover;
