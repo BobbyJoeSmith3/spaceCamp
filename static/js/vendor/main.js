@@ -66,7 +66,7 @@ $(document).ready(function() {
 	var currentDate = new Date();
 
 	// Set to the date the applicaiton is due (year, month, day, hour, minute). Currently set to end of internship
-	var futureDate  = new Date(2015, 09, 04, 17, 30);
+	var futureDate  = new Date(2015, 08, 28, 17, 30);
 
 	// Calculate the difference in seconds between the future and current date
 	var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;

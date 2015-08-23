@@ -2512,29 +2512,18 @@ html.remodal-is-locked {
 .what-we-do {
   margin: 0;
   height: 100%;
-  font-family: 'Audiowide', cursive;
   text-transform: uppercase;
   background-color: black;
   color: white;
-}
-
-.above, .below {
-  text-align: center;
-  padding: 100px 0;
 }
 
 .split {
   text-align: center;
 }
 
-.split h1 {
-  margin: 0;
-  font-size: 72px;
-}
-
 ul {
   text-align: left;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 .split__left__inner,
@@ -2543,11 +2532,11 @@ ul {
 }
 
 .split__left__inner {
-  background-image: url(http://www.simonstalenhag.se/bilderbig/peripheral1_1920.jpg);
+  background-image: url(../images/full_left_iss.jpg);
 }
 
 .split__right__inner {
-  background-image: url(http://www.simonstalenhag.se/bilderbig/december1994_1920.jpg);
+  background-image: url(../images/full_right_iss.jpg);
 }
 
 @media (min-width: 768px) {
@@ -2574,7 +2563,7 @@ ul {
     align-items: center;
   }
 
-  .split__right__inner h1 {
+  .split__right__inner h2 {
     order: 1;
   }
 
