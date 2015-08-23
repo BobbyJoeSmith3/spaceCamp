@@ -61,7 +61,7 @@ $tertiary:     #e48d38; // orange
 $primary:     #3D4150; //Muted Dark Blue
 $secondary:   #FDE766; //Space Cadet Yellow
 $tertiary:    #D8D8D2; //Hull Gray
-$quaternary:  #c46e35; // dark orange
+$quaternary:  #c46e35; //Dark Orasnge
 // quinary, senary, septenary, octonary, nonary, denary
 
 // Form validation colors
@@ -70,7 +70,9 @@ $state-error:    #b94a48;
 
 // Fonts
 $font-body: 'Gotham-Rnd-Light', Arial, Helvetica, sans-serif;
-$font-head: 'Ailerons', Arial, Helvetica, sans-serif;
+$font-head: 'League-Gothic-Regular', Arial Bold, Helvetica, sans-serif;
+$font-logo: 'Ailerons',  Arial Bold, Helvetica, sans-serif;
+
 
 // Examples for custom @font-face (see _fonts.scss for declaration)
 //$font-body:  "Source Sans Pro", Arial, Helvetica, sans-serif;
