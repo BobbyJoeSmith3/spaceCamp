@@ -253,18 +253,15 @@ background-repeat: no-repeat;
 //  5. CADETS SECTION
 //------------------------------------//
 
+.remodal .grid-wrapper{
+ margin-left:0;
+}
+
 #cadets{
 	background-color:$tertiary;
 	color:$primary;
-	h4{
-		text-align: center;
-   		font-size:36px;
-	}
-	h5{
-		text-align: center;
-   		font-size:16px;
-	}
-	  position: relative;
+	position: relative;
+	padding-bottom:43px;
 
 }
 
@@ -275,7 +272,7 @@ background-repeat: no-repeat;
 
 /* Caption Style 7 */
 .griddle {
-	padding: 20px 20px 100px 20px;
+	padding: 0px 20px 50px 20px;
 }
 
 .griddle figure {
@@ -328,7 +325,7 @@ background-repeat: no-repeat;
 .no-touch .cs-style-7 figure:hover figcaption,
 .cs-style-7 figure.cs-hover figcaption {
 	opacity: 1;
-	height: 130%;
+	height: 110%;
 	box-shadow: 0 0 0 10px #2c3f52;
 }
 
@@ -338,7 +335,7 @@ background-repeat: no-repeat;
 	-moz-transition: opacity 0s;
 	transition: opacity 0s;
 	position: absolute;
-	bottom: 80px;
+	bottom: 0px;
 	left: 0;
 	right: 0;
 }

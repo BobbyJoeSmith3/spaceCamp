@@ -684,6 +684,10 @@ img[height] {
   font-family: 'League-Gothic-Regular';
   src: url("../fonts/LeagueGothic-Regular.otf");
 }
+@font-face {
+  font-family: 'GothamRnd-Book';
+  src: url("../fonts/GothamRnd-Book.otf");
+}
 html {
   font: 1em/1.75 "Gotham-Rnd-Light", Arial, Helvetica, sans-serif;
   color: #000;
@@ -743,23 +747,52 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 16px;
-  line-height: 1.4;
-  word-spacing: 20px;
+  font-size: 28.8px;
+  line-height: 1.9;
+  font-family: "League-Gothic-Regular", Arial Bold, Helvetica, sans-serif;
 }
 
 h4, .h4 {
-  font-size: 14px;
+  font-size: 16px;
+  font-family: "Gotham-Rnd-Light", Arial, Helvetica, sans-serif;
+  margin-top: -40px;
 }
 
 h5, .h5 {
-  font-size: 14px;
-  font-family: "Gotham-Rnd-Light", Arial, Helvetica, sans-serif;
+  font-size: 28.8px;
+  margin-top: 0;
+  font-family: "League-Gothic-Regular", Arial Bold, Helvetica, sans-serif;
+}
+
+h6, .h6 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-family: "GothamRnd-Book", Arial Bold, Helvetica, sans-serif;
+}
+
+.title {
+  margin: 0 auto;
+}
+
+.modal-body-copy {
+  margin-top: 38px;
+  font-size: 16px;
+}
+.modal-body-copy p {
+  line-height: 1.5;
 }
 
 #who-we-are-copy p {
   margin-top: -12px;
   line-height: 0.8;
+}
+
+.modal-body-copy {
+  margin-top: 0px;
+  font-size: 16px;
+}
+.modal-body-copy p {
+  line-height: 1.5;
 }
 
 h1, .h1 {
@@ -773,11 +806,11 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 24px;
+  font-size: 28.8px;
 }
 
 h4, .h4 {
-  font-size: 19.2px;
+  font-size: 16px;
 }
 
 form {
@@ -1194,18 +1227,15 @@ body, html {
   background-repeat: no-repeat;
 }
 
+.remodal .grid-wrapper {
+  margin-left: 0;
+}
+
 #cadets {
   background-color: #D8D8D2;
   color: #3D4150;
   position: relative;
-}
-#cadets h4 {
-  text-align: center;
-  font-size: 36px;
-}
-#cadets h5 {
-  text-align: center;
-  font-size: 16px;
+  padding-bottom: 43px;
 }
 
 #spacecadet-headline {
@@ -1215,7 +1245,7 @@ body, html {
 
 /* Caption Style 7 */
 .griddle {
-  padding: 20px 20px 100px 20px;
+  padding: 0px 20px 50px 20px;
 }
 
 .griddle figure {
@@ -1261,7 +1291,7 @@ body, html {
 .no-touch .cs-style-7 figure:hover figcaption,
 .cs-style-7 figure.cs-hover figcaption {
   opacity: 1;
-  height: 130%;
+  height: 110%;
   box-shadow: 0 0 0 10px #2c3f52;
 }
 
@@ -1271,7 +1301,7 @@ body, html {
   -moz-transition: opacity 0s;
   transition: opacity 0s;
   position: absolute;
-  bottom: 80px;
+  bottom: 0px;
   left: 0;
   right: 0;
 }

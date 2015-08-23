@@ -9,7 +9,6 @@
   .grid-wrapper {
     list-style: none;
     margin-bottom: 0;
-
     @include rem(margin-left, -$gutter, $base-font-size--mobile);
     @include clearfix;
 
