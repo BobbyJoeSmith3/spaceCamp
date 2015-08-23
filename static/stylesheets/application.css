@@ -119,11 +119,11 @@ table {
   }
 
   .one-third, .two-sixths, .four-twelfths {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
 
   .two-thirds, .four-sixths, .eight-twelfths {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
 
   .one-quarter, .two-eighths, .three-twelfths {
@@ -151,11 +151,11 @@ table {
   }
 
   .one-sixth, .two-twelfths {
-    width: 16.6666666667%;
+    width: 16.66667%;
   }
 
   .five-sixths, .ten-twelfths {
-    width: 83.3333333333%;
+    width: 83.33333%;
   }
 
   .one-eighth {
@@ -191,19 +191,19 @@ table {
   }
 
   .one-twelfth {
-    width: 8.3333333333%;
+    width: 8.33333%;
   }
 
   .five-twelfths {
-    width: 41.6666666667%;
+    width: 41.66667%;
   }
 
   .seven-twelfths {
-    width: 58.3333333333%;
+    width: 58.33333%;
   }
 
   .eleven-twelfths {
-    width: 91.6666666667%;
+    width: 91.66667%;
   }
 }
 [class*="push--"] {
@@ -220,11 +220,11 @@ table {
   }
 
   .push--one-third, .push--two-sixths, .push--four-twelfths {
-    left: 33.3333333333%;
+    left: 33.33333%;
   }
 
   .push--two-thirds, .push--four-sixths, .push--eight-twelfths {
-    left: 66.6666666667%;
+    left: 66.66667%;
   }
 
   .push--one-quarter, .push--two-eighths, .push--three-twelfths {
@@ -252,11 +252,11 @@ table {
   }
 
   .push--one-sixth, .push--two-twelfths {
-    left: 16.6666666667%;
+    left: 16.66667%;
   }
 
   .push--five-sixths, .push--ten-twelfths {
-    left: 83.3333333333%;
+    left: 83.33333%;
   }
 
   .push--one-eighth {
@@ -292,19 +292,19 @@ table {
   }
 
   .push--one-twelfth {
-    left: 8.3333333333%;
+    left: 8.33333%;
   }
 
   .push--five-twelfths {
-    left: 41.6666666667%;
+    left: 41.66667%;
   }
 
   .push--seven-twelfths {
-    left: 58.3333333333%;
+    left: 58.33333%;
   }
 
   .push--eleven-twelfths {
-    left: 91.6666666667%;
+    left: 91.66667%;
   }
 }
 [class*="pull--"] {
@@ -321,11 +321,11 @@ table {
   }
 
   .pull--one-third, .pull--two-sixths, .pull--four-twelfths {
-    right: 33.3333333333%;
+    right: 33.33333%;
   }
 
   .pull--two-thirds, .pull--four-sixths, .pull--eight-twelfths {
-    right: 66.6666666667%;
+    right: 66.66667%;
   }
 
   .pull--one-quarter, .pull--two-eighths, .pull--three-twelfths {
@@ -353,11 +353,11 @@ table {
   }
 
   .pull--one-sixth, .pull--two-twelfths {
-    right: 16.6666666667%;
+    right: 16.66667%;
   }
 
   .pull--five-sixths, .pull--ten-twelfths {
-    right: 83.3333333333%;
+    right: 83.33333%;
   }
 
   .pull--one-eighth {
@@ -393,19 +393,19 @@ table {
   }
 
   .pull--one-twelfth {
-    right: 8.3333333333%;
+    right: 8.33333%;
   }
 
   .pull--five-twelfths {
-    right: 41.6666666667%;
+    right: 41.66667%;
   }
 
   .pull--seven-twelfths {
-    right: 58.3333333333%;
+    right: 58.33333%;
   }
 
   .pull--eleven-twelfths {
-    right: 91.6666666667%;
+    right: 91.66667%;
   }
 }
 .island,
@@ -2567,6 +2567,7 @@ html.remodal-is-locked {
 ul {
   text-align: left;
   font-size: 1.1em;
+  padding: 1.5em;
 }
 
 .split__left__inner,
@@ -2599,11 +2600,24 @@ ul {
     -webkit-backface-visibility: hidden;
   }
 
-  .split__left__inner,
-  .split__right__inner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  .split__left__inner h2 {
+    width: 50%;
+    float: left;
+  }
+
+  .split__left__inner ul {
+    width: 50%;
+    float: right;
+  }
+
+  .split__right__inner h2 {
+    width: 50%;
+    float: right;
+  }
+
+  .split__right__inner ul {
+    width: 50%;
+    float: left;
   }
 
   .split__right__inner h2 {

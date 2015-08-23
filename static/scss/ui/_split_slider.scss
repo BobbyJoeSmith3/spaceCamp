@@ -14,6 +14,7 @@
 ul {
   text-align: left;
   font-size: 1.1em;
+  padding: 1.5em;
 }
 
 .split__left__inner,
@@ -46,11 +47,21 @@ ul {
     -webkit-backface-visibility: hidden;
   }
 
-  .split__left__inner,
-  .split__right__inner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  .split__left__inner h2 {
+    width: 50%;
+    float: left;
+  }
+  .split__left__inner ul {
+    width: 50%;
+    float: right;
+  }
+  .split__right__inner h2 {
+    width: 50%;
+    float: right;
+  }
+  .split__right__inner ul {
+    width: 50%;
+    float: left;
   }
 
   .split__right__inner h2 {
