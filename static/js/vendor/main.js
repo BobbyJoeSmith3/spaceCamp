@@ -54,6 +54,15 @@ jQuery(document).ready(function($){
 	}
 });
 
+//########################################/
+//	video player space camp section
+//########################################/
+$(document).ready(function() {
+        $('.play-button').click(function() {
+            document.getElementById("space-camp-video-wrapper").style.display="block";
+            //$("video").click();
+        });
+});
 
 //########################################/
 //	flipclock
