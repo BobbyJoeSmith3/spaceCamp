@@ -30,7 +30,7 @@ ul {
   background-image: url(../images/full_right_iss.jpg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: $lap-start) {
   .split {
     position: relative;
     min-height: 900px;

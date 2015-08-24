@@ -1061,6 +1061,7 @@ body {
 
 body, html {
   height: 100%;
+  background-color: #000;
   -webkit-font-smoothing: antialiased;
   font-weight: normal;
   outline: 0;
