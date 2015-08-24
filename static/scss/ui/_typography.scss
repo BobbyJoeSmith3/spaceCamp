@@ -32,39 +32,99 @@ h6, .h6 {
 }
 
 h1, .h1 {
-  @include rem(font-size, 1.875);
+  @include rem(font-size, 1.6);
   line-height: 1.1;
   word-spacing: 20px;
-  color:$white;
+  font-family: $font-logo;
+   padding-top:25px;
+   word-spacing:90px;
+}
+
+#who-we-are-copy{
+    p{
+    margin-top:-12px;
+    line-height: 1.1;
+   }
 }
 
 h2, .h2 {
   @include rem(font-size, 1.875);
-  line-height: 1.2;
-  word-spacing: 20px;
+  line-height: 1.1;
+  word-spacing: 10px;
+  letter-spacing: 4px;
+  color:$white;
+  font-family: $font-head;
+  text-transform: uppercase;
 }
 
 h3, .h3 {
-  @include rem(font-size, 1);
-  line-height: 1.4;
-  word-spacing: 20px;
+  @include rem(font-size, 1.8);
+  line-height: 1.9;
+  font-family: $font-head;
+
 }
 
 h4, .h4 {
-  @include rem(font-size, .875);
+  @include rem(font-size, 1);
+   font-family: $font-body;
+   margin-top: -40px;
 }
 
 h5, .h5 {
-  @include rem(font-size, .875);
-  font-family: $font-body;
-
+    @include rem(font-size, 1.8);
+    margin-top:0;
+  font-family: $font-head;
 }
+
+h6, .h6 {
+    @include rem(font-size, 1);
+    margin-bottom:15px;
+  font-family: $font-headerBody;
+}
+
+.title {
+ margin: 0 auto;
+}
+
+.modal-body-copy{
+
+margin-top:38px;
+ @include rem(font-size, 1);
+ p{
+  line-height:1.5;
+ }
+}
+
+
 @include media-query(lap-and-up) {
-  h1, .h1 { @include rem(font-size, 3.6); }
 
-  h2, .h2 { @include rem(font-size, 3.6); }
+  #who-we-are-copy{
+    p{
+    margin-top:-12px;
+    line-height: 0.8;
+   }
+  }
 
-  h3, .h3 { @include rem(font-size, 1.5); }
+  .modal-body-copy{
+  margin-top:0px;
+ @include rem(font-size, 1);
+ p{
+  line-height:1.5;
+ }
+ }
 
-  h4, .h4 { @include rem(font-size, 1.2); }
+
+  h1, .h1 { @include rem(font-size, 1.6);
+   }
+
+  h2, .h2 { @include rem(font-size, 3.6); 
+    word-spacing: 20px;
+  letter-spacing: 4px;
+          }
+
+  h3, .h3 { @include rem(font-size, 1.8);
+
+   }
+
+  h4, .h4 { @include rem(font-size, 1); }
 }

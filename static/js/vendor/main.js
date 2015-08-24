@@ -54,6 +54,15 @@ jQuery(document).ready(function($){
 	}
 });
 
+//########################################/
+//	video player space camp section
+//########################################/
+$(document).ready(function() {
+        $('.play-button').click(function() {
+            document.getElementById("space-camp-video-wrapper").style.display="block";
+            //$("video").click();
+        });
+});
 
 //########################################/
 //	flipclock
@@ -66,7 +75,7 @@ $(document).ready(function() {
 	var currentDate = new Date();
 
 	// Set to the date the applicaiton is due (year, month, day, hour, minute). Currently set to end of internship
-	var futureDate  = new Date(2015, 09, 04, 17, 30);
+	var futureDate  = new Date(2015, 08, 28, 17, 30);
 
 	// Calculate the difference in seconds between the future and current date
 	var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
@@ -76,3 +85,60 @@ $(document).ready(function() {
 		countdown: true
 	});
 });
+
+//########################################/
+//	split slider
+//########################################/
+
+var Split = (function () {
+  function Split (el) {
+    this.left = el.querySelector('.split__left')
+    this.leftInner = el.querySelector('.split__left__inner')
+    // this.right = el.querySelector('.split__right')
+    // this.rightInner = el.querySelector('.split__right__inner')
+    this.p = 0
+  }
+
+  Split.prototype = {
+    update: function update (p) {
+      var targetP = 100 - p * 100
+      if (Math.abs(targetP - this.p) < .20) return false
+      this.p += (targetP - this.p) * .25
+      this.left.style.transform = 'translateZ(0) translateX(' + -this.p + '%)'
+      this.leftInner.style.transform = 'translateZ(0) translateX(' + this.p + '%)'
+      return true
+    }
+  }
+
+  return Split
+})()
+
+
+var width = window.innerWidth
+var targetX = width / 2
+
+var resting = false
+
+if (window.width >= 768) {
+  var el = document.getElementById('split')
+  var split = new Split(el)
+
+  update()
+
+  function update () {
+    var p = targetX / window.innerWidth
+    var moved = split.update(p)
+    resting = !moved
+    if (moved) requestAnimationFrame(update)
+  }
+
+  el.addEventListener('mousemove', function (e) {
+    targetX = e.clientX
+    if (resting) update()
+  })
+
+  el.addEventListener('mouseleave', function () {
+    targetX = window.innerWidth / 2
+    if (resting) update()
+  })
+}
