@@ -1254,6 +1254,10 @@ body, html {
   padding-bottom: 90px;
 }
 
+.space-camp-video-wrapper {
+  display: none;
+}
+
 .one-whole h1 {
   padding-top: 43px;
 }
