@@ -1532,7 +1532,7 @@ Main components
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 999;
 }
 .no-touch #cd-vertical-nav li {
   text-align: right;
@@ -2561,8 +2561,6 @@ html.remodal-is-locked {
 .what-we-do {
   margin: 0;
   height: 100%;
-  text-transform: uppercase;
-  background-color: black;
   color: white;
 }
 
@@ -2570,10 +2568,64 @@ html.remodal-is-locked {
   text-align: center;
 }
 
+#what-do-left {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+#what-do-left h2 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+}
+
+#what-do-right {
+  float: right;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+#what-do-right ul {
+  left: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#what-dont-left {
+  float: right;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+#what-dont-left h2 {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translateY(-50%);
+}
+
+#what-dont-right {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+#what-dont-right ul {
+  right: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 ul {
   text-align: left;
   font-size: 1.1em;
   padding: 1.5em;
+  line-height: 1.2;
 }
 
 .split__left__inner,

@@ -96,13 +96,13 @@ var Split = (function () {
     this.leftInner = el.querySelector('.split__left__inner')
     // this.right = el.querySelector('.split__right')
     // this.rightInner = el.querySelector('.split__right__inner')
-    this.p = 50
+    this.p = 0
   }
 
   Split.prototype = {
     update: function update (p) {
       var targetP = 100 - p * 100
-      if (Math.abs(targetP - this.p) < .05) return false
+      if (Math.abs(targetP - this.p) < .20) return false
       this.p += (targetP - this.p) * .25
       this.left.style.transform = 'translateZ(0) translateX(' + -this.p + '%)'
       this.leftInner.style.transform = 'translateZ(0) translateX(' + this.p + '%)'
