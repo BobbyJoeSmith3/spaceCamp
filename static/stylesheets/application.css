@@ -1109,7 +1109,7 @@ body, html {
 }
 
 .spaceClock-wrapper {
-  margin: 0 auto;
+  transform: scale(1.5, 1.5);
 }
 @media only screen and (max-width: 767px) {
   .spaceClock-wrapper {
@@ -1127,6 +1127,14 @@ body, html {
   width: 100%;
   font-family: "Gotham-Rnd-Light", Arial, Helvetica, sans-serif;
   font-size: 16px;
+}
+#who-we-are-copy #who-we-are-content {
+  padding-top: 50px;
+}
+#who-we-are-copy #who-we-are-content h2 {
+  font-size: 1em;
+  word-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .logoheader {
@@ -1380,9 +1388,13 @@ body, html {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
 }
 #enlist h2 {
-  margin-top: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .btn {
@@ -1401,6 +1413,46 @@ body, html {
 }
 #enlist-box a {
   font-size: 1.5em;
+}
+
+#positions {
+  background: url(../images/positions.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+#positions h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#instructions {
+  background: url(../images/apply.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+#instructions h2 {
+  padding-top: 48px;
+}
+#instructions #process-boxes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#instructions #process-boxes .process-box {
+  margin-bottom: 80px;
+}
+
+input {
+  margin: 0 auto;
 }
 
 .footer {
@@ -1532,7 +1584,8 @@ Main components
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 999;
+  z-index: 10;
+  cursor: pointer;
 }
 .no-touch #cd-vertical-nav li {
   text-align: right;
@@ -2083,7 +2136,7 @@ html.remodal-is-locked {
 .flip-clock-wrapper a {
   cursor: pointer;
   text-decoration: none;
-  color: #ccc;
+  color: #fff;
 }
 
 .flip-clock-wrapper a:hover {
@@ -2127,7 +2180,6 @@ html.remodal-is-locked {
 .flip-clock-wrapper {
   text-align: center;
   position: relative;
-  width: 530px;
   margin: 0 auto;
 }
 
@@ -2150,7 +2202,6 @@ html.remodal-is-locked {
   margin: 5px;
   width: 60px;
   height: 90px;
-  font-size: 80px;
   font-weight: bold;
   line-height: 87px;
   border-radius: 6px;
@@ -2242,7 +2293,7 @@ html.remodal-is-locked {
   color: #ccc;
   text-shadow: 0 1px 2px #000;
   text-align: center;
-  background-color: #333;
+  background-color: #3D4150;
   border-radius: 6px;
   font-size: 70px;
 }
@@ -2285,7 +2336,7 @@ html.remodal-is-locked {
 
 .flip-clock-dot {
   display: block;
-  background: #323434;
+  background: #fff;
   width: 10px;
   height: 10px;
   position: absolute;
@@ -2297,9 +2348,13 @@ html.remodal-is-locked {
 .flip-clock-divider .flip-clock-label {
   position: absolute;
   top: -1.5em;
-  right: -86px;
-  color: black;
+  right: -125px;
+  color: #fff;
   text-shadow: none;
+  text-transform: uppercase;
+  font-family: "League-Gothic-Regular", Arial Bold, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-size: 1rem;
 }
 
 .flip-clock-divider.minutes .flip-clock-label {
@@ -2561,6 +2616,7 @@ html.remodal-is-locked {
 .what-we-do {
   margin: 0;
   height: 100%;
+  background-color: black;
   color: white;
 }
 
