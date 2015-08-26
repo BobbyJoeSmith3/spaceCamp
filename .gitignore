@@ -1,5 +1,6 @@
 .DS_Store
 static/.sass-cache
+static/.sass-cache/*
 
 #ignore these directories
 design
