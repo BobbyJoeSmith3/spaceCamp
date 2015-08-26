@@ -61,13 +61,14 @@ body, html {
 	background-position: center 60%;
 	position: relative;
 }
+
 .spaceClock-wrapper {
-	margin: 0 auto;
-	@include media-query(below-lap){
+	transform:scale(1.5,1.5);
+
+	@include media-query(below-lap) {
 	  transform:scale(.5,.5) translateX(-50%);
 	  width: 200%;
 	}
-
 }
 
 #who-we-are-copy {
@@ -79,8 +80,18 @@ body, html {
      width:100%;
      font-family: $font-body;
 	 font-size:16px;
+
+	 #who-we-are-content {
+		 padding-top: 50px;
+		 h2 {
+			 font-size:1em;
+			 word-spacing: 1px;
+			 letter-spacing: 2px;
+		 }
+	 }
 }
 
+// END WHO WE ARE SECTION
 
 //------------------------------------//
 //  2. WHAT WE DO
@@ -89,7 +100,7 @@ body, html {
 // _/split_slider.scss
 
 
-//END PROCESS SECTION
+//END WHAT WE DO SECTION
 
 //------------------------------------//
 //  3. SPACECAMP SECTION
@@ -352,23 +363,27 @@ background-repeat: no-repeat;
 //  6. ENLIST SECTION
 //------------------------------------//
 
-#enlist{
+#enlist {
 	background: url(../images/people.jpg);
 	background-size:cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	position: relative;
-	h2{
-		margin-top:20px;
+	overflow: hidden;
+	h2 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 }
 
 
-.btn{
+.btn {
 	border:none;
 }
 
-#enlist-box{
+#enlist-box {
  	border: 3px solid $white;
   border-radius: 2px;
 	display: table-cell;
@@ -380,4 +395,57 @@ background-repeat: no-repeat;
 	a {
 		font-size: 1.5em;
 	}
+}
+
+// END ENLIST SECTION
+
+//------------------------------------//
+//  7. Application Instructions
+//------------------------------------//
+
+
+#positions {
+	background: url(../images/positions.jpg);
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow:hidden;
+	h2 {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	}
+}
+
+// END APPLICATION INSTRUCTIONS SECTION
+
+//------------------------------------//
+//  8. Application Instructions
+//------------------------------------//
+
+#instructions {
+	background: url(../images/apply.jpg);
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow:hidden;
+	h2 {
+		padding-top:48px;
+	}
+	#process-boxes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+		.process-box {
+			 margin-bottom:80px;
+		}
+	}
+}
+
+input {
+	margin: 0 auto;
 }
