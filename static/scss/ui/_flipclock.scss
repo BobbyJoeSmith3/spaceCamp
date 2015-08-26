@@ -16,10 +16,10 @@
 .flip-clock-wrapper a {
   cursor: pointer;
   text-decoration: none;
-  color: #ccc; }
+  color: $white; }
 
 .flip-clock-wrapper a:hover {
-  color: #fff; }
+  color: $white; }
 
 .flip-clock-wrapper ul {
   list-style: none; }
@@ -50,7 +50,7 @@
 .flip-clock-wrapper {
   text-align: center;
   position: relative;
-  width:530px;
+  //width:530px;
   margin: 0 auto;
 }
 
@@ -70,11 +70,11 @@
   margin: 5px;
   width: 60px;
   height: 90px;
-  font-size: 80px;
+  //font-size: 80px;
   font-weight: bold;
   line-height: 87px;
   border-radius: 6px;
-  background: #000;
+  background: $black;
 }
 
 .flip-clock-wrapper ul li {
@@ -156,7 +156,7 @@
   color: #ccc;
   text-shadow: 0 1px 2px #000;
   text-align: center;
-  background-color: #333;
+  background-color: $primary;
   border-radius: 6px;
   font-size: 70px; }
 
@@ -190,7 +190,7 @@
 
 .flip-clock-dot {
   display: block;
-  background: #323434;
+  background: $white;
   width: 10px;
   height: 10px;
   position: absolute;
@@ -201,9 +201,13 @@
 .flip-clock-divider .flip-clock-label {
   position: absolute;
   top: -1.5em;
-  right: -86px;
-  color: black;
-  text-shadow: none; }
+  right: -125px;
+  color: $white;
+  text-shadow: none;
+  text-transform: uppercase;
+  font-family: $font-head;
+  letter-spacing: 2px;
+  font-size: 1rem}
 
 .flip-clock-divider.minutes .flip-clock-label {
   right: -88px; }
