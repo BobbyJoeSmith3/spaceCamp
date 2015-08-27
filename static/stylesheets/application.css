@@ -1664,7 +1664,7 @@ Main components
 /* Touch devices */
 .touch .cd-nav-trigger {
   display: block;
-  z-index: 2;
+  z-index: 9999;
   position: fixed;
   bottom: 30px;
   right: 5%;
@@ -1706,7 +1706,7 @@ Main components
 
 .touch #cd-vertical-nav {
   position: fixed;
-  z-index: 1000;
+  z-index: 9999;
   right: 5%;
   bottom: 30px;
   width: 90%;
@@ -1731,7 +1731,7 @@ Main components
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
   border-radius: 0.25em;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(61, 65, 80, 0.9);
 }
 .touch #cd-vertical-nav a {
   display: block;

@@ -145,7 +145,7 @@ Main components
 
 .touch .cd-nav-trigger {
 	display: block;
-	z-index: 2;
+	z-index: 9999;
 	position: fixed;
 	bottom: 30px;
 	right: 5%;
@@ -184,7 +184,7 @@ Main components
 
 .touch #cd-vertical-nav {
 	position: fixed;
-	z-index: 1000;
+	z-index: 9999;
 	right: 5%;
 	bottom: 30px;
 	width: 90%;
@@ -197,7 +197,7 @@ Main components
 	@include transition-property(transform);
 	@include transition-duration(.2s);
 	@include border-radius;
-	background-color: rgba($white, .9);
+	background-color: rgba($primary, .9);
 
 	a {
 		display: block;
