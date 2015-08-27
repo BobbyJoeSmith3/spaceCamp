@@ -1109,7 +1109,7 @@ body, html {
 }
 
 .spaceClock-wrapper {
-  transform: scale(1.5, 1.5);
+  transform: scale(1.25, 1.25);
 }
 @media only screen and (max-width: 767px) {
   .spaceClock-wrapper {
