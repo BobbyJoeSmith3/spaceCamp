@@ -63,6 +63,11 @@ body, html {
 }
 
 .spaceClock-wrapper {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+
 	transform:scale(1.25,1.25);
 
 	@include media-query(below-lap) {
