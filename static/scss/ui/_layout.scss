@@ -68,7 +68,7 @@ body, html {
 	text-align: center;
 	width: 100%;
 
-	transform:scale(1.25,1.25);
+	//transform:scale(1.25,1.25);
 
 	@include media-query(below-lap) {
 	  transform:scale(.5,.5) translateX(-50%);
