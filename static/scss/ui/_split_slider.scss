@@ -1,93 +1,93 @@
-
-.what-we-do {
-  margin: 0;
-  height: 100%;
-  background-color: black;
-  color: white;
-}
-
-.split {
-  text-align: center;
-}
-
-#what-do-left{
-  float:left;
-  position: relative;
-  width: 50%;
-  height:100%;
-
-  h2{
-  position: absolute;
-  top: 50%;
-  left:25%;
-  transform: translateY(-50%);
-  }
-}
-
-#what-do-right{
-  float:right;
-  position: relative;
-  width: 50%;
-  height:100%;
-    ul{
-  left:10%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+@include media-query(lap-and-up){
+  .what-we-do {
+    margin: 0;
+    height: 100%;
+    background-color: black;
+    color: white;
   }
 
-}
-
-
-#what-dont-left{
-  float:right;
-  position: relative;
-  width: 50%;
-  height:100%;
-  h2{
-    width:60%;
-  position: absolute;
-  top: 50%;
-  right:25%;
-  transform: translateY(-50%);
-  }
-}
-
-#what-dont-right{
-  float:left;
-  position: relative;
-  width: 50%;
-  height:100%;
-    ul{
-  right:10%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  .split {
+    text-align: center;
   }
 
-}
+  #what-do-left{
+    float:left;
+    position: relative;
+    width: 50%;
+    height:100%;
 
-ul {
-  text-align: left;
-  font-size: 1.1em;
-  padding: 1.5em;
-  line-height: 1.2;
-}
+    h2{
+    position: absolute;
+    top: 50%;
+    left:25%;
+    transform: translateY(-50%);
+    }
+  }
 
-.split__left__inner,
-.split__right__inner {
-  padding: 100px 0;
-}
+  #what-do-right{
+    float:right;
+    position: relative;
+    width: 50%;
+    height:100%;
+      ul{
+    left:10%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    }
 
-.split__left__inner {
-  background-image: url(../images/full_left_iss.jpg);
-}
+  }
 
-.split__right__inner {
-  background-image: url(../images/full_right_iss.jpg);
-}
 
-@media (min-width: $lap-start) {
+  #what-dont-left{
+    float:right;
+    position: relative;
+    width: 50%;
+    height:100%;
+    h2{
+      width:60%;
+    position: absolute;
+    top: 50%;
+    right:25%;
+    transform: translateY(-50%);
+    }
+  }
+
+  #what-dont-right{
+    float:left;
+    position: relative;
+    width: 50%;
+    height:100%;
+      ul{
+    right:10%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+
+  }
+
+  ul {
+    text-align: left;
+    font-size: 1.1em;
+    padding: 1.5em;
+    line-height: 1.2;
+  }
+
+  .split__left__inner,
+  .split__right__inner {
+    padding: 100px 0;
+  }
+
+  .split__left__inner {
+    background-image: url(../images/full_left_iss.jpg);
+  }
+
+  .split__right__inner {
+    background-image: url(../images/full_right_iss.jpg);
+  }
+
+  //comb over this
   .split {
     position: relative;
     min-height: 900px;
@@ -135,4 +135,5 @@ ul {
     background-size: cover;
     padding: 0;
   }
+
 }

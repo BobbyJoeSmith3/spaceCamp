@@ -1109,15 +1109,15 @@ body, html {
 }
 
 .spaceClock-wrapper {
+  display: inline-block;
   position: relative;
   margin: 0 auto;
   text-align: center;
-  width: 100%;
 }
 @media only screen and (max-width: 767px) {
   .spaceClock-wrapper {
+    display: inline-block;
     transform: scale(0.5, 0.5) translateX(-50%);
-    width: 200%;
   }
 }
 
@@ -2376,6 +2376,76 @@ html.remodal-is-locked {
   bottom: 30px;
 }
 
+@media only screen and (max-width: 767px) {
+  .flip-clock-wrapper ul li a div div.inn {
+    font-size: 29px;
+  }
+
+  .spaceClock-wrapper {
+    display: inline-block;
+    transform: scale(1, 1) translateX(0%);
+  }
+
+  .flip-clock-divider .flip-clock-label {
+    right: -75px;
+  }
+
+  .flip-clock-divider.minutes .flip-clock-label {
+    right: -62px;
+  }
+
+  .flip-clock-divider.seconds .flip-clock-label {
+    right: -62px;
+  }
+
+  .flip-clock-dot.top {
+    top: 26px;
+  }
+
+  .flip-clock-dot {
+    display: block;
+    background: #fff;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    border-radius: 65%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    left: 5px;
+  }
+
+  .flip-clock-divider {
+    float: left;
+    display: inline-block;
+    position: relative;
+    width: 14px;
+    height: 49px;
+  }
+
+  .flip-clock-wrapper ul li a div {
+    font-size: 25px;
+  }
+
+  .flip-clock-wrapper .flip {
+    padding: 11px;
+    box-shadow: 0 0px 0px transparent;
+  }
+
+  .flip-clock-wrapper ul {
+    position: relative;
+    float: left;
+    margin: 3px;
+    width: 27px;
+    height: 37px;
+    font-weight: bold;
+    line-height: 26px;
+    border-radius: 6px;
+    background: none;
+  }
+
+  .flip-clock-wrapper ul li {
+    line-height: 34px;
+  }
+}
 @-webkit-keyframes asd {
   0% {
     z-index: 2;
@@ -2616,91 +2686,91 @@ html.remodal-is-locked {
     opacity: 0;
   }
 }
-.what-we-do {
-  margin: 0;
-  height: 100%;
-  background-color: black;
-  color: white;
-}
+@media only screen and (min-width: 768px) {
+  .what-we-do {
+    margin: 0;
+    height: 100%;
+    background-color: black;
+    color: white;
+  }
 
-.split {
-  text-align: center;
-}
+  .split {
+    text-align: center;
+  }
 
-#what-do-left {
-  float: left;
-  position: relative;
-  width: 50%;
-  height: 100%;
-}
-#what-do-left h2 {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translateY(-50%);
-}
+  #what-do-left {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
+  #what-do-left h2 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+  }
 
-#what-do-right {
-  float: right;
-  position: relative;
-  width: 50%;
-  height: 100%;
-}
-#what-do-right ul {
-  left: 10%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  #what-do-right {
+    float: right;
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
+  #what-do-right ul {
+    left: 10%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-#what-dont-left {
-  float: right;
-  position: relative;
-  width: 50%;
-  height: 100%;
-}
-#what-dont-left h2 {
-  width: 60%;
-  position: absolute;
-  top: 50%;
-  right: 25%;
-  transform: translateY(-50%);
-}
+  #what-dont-left {
+    float: right;
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
+  #what-dont-left h2 {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    transform: translateY(-50%);
+  }
 
-#what-dont-right {
-  float: left;
-  position: relative;
-  width: 50%;
-  height: 100%;
-}
-#what-dont-right ul {
-  right: 10%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  #what-dont-right {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
+  #what-dont-right ul {
+    right: 10%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-ul {
-  text-align: left;
-  font-size: 1.1em;
-  padding: 1.5em;
-  line-height: 1.2;
-}
+  ul {
+    text-align: left;
+    font-size: 1.1em;
+    padding: 1.5em;
+    line-height: 1.2;
+  }
 
-.split__left__inner,
-.split__right__inner {
-  padding: 100px 0;
-}
+  .split__left__inner,
+  .split__right__inner {
+    padding: 100px 0;
+  }
 
-.split__left__inner {
-  background-image: url(../images/full_left_iss.jpg);
-}
+  .split__left__inner {
+    background-image: url(../images/full_left_iss.jpg);
+  }
 
-.split__right__inner {
-  background-image: url(../images/full_right_iss.jpg);
-}
+  .split__right__inner {
+    background-image: url(../images/full_right_iss.jpg);
+  }
 
-@media (min-width: 768px) {
   .split {
     position: relative;
     min-height: 900px;

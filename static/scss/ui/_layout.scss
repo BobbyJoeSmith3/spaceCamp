@@ -63,16 +63,16 @@ body, html {
 }
 
 .spaceClock-wrapper {
+	display: inline-block;
 	position: relative;
 	margin: 0 auto;
 	text-align: center;
-	width: 100%;
 
 	//transform:scale(1.25,1.25);
 
 	@include media-query(below-lap) {
+		display: inline-block;
 	  transform:scale(.5,.5) translateX(-50%);
-	  width: 200%;
 	}
 }
 
