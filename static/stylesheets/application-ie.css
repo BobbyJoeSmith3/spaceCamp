@@ -1334,7 +1334,7 @@ body, html {
   text-align: left;
 }
 
-#enlist {
+.enlist {
   background: url(../images/people.jpg);
   background-size: cover;
   background-position: center center;
@@ -1342,7 +1342,7 @@ body, html {
   position: relative;
   overflow: hidden;
 }
-#enlist h2 {
+.enlist h2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1353,18 +1353,40 @@ body, html {
   border: none;
 }
 
-#enlist-box {
+.enlist-box {
   border: 3px solid #fff;
-  border-radius: 2px;
-  display: table-cell;
-  vertical-align: middle;
+  padding: 0px 28px;
+  margin: 20px auto;
+  display: inline-block;
+}
+.enlist-box a {
+  font-size: 1.5em;
+}
+
+.form-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#enlist-box a {
-  font-size: 1.5em;
+.form-wrapper .inputs--left {
+  margin: 0px 0px 20px 30px;
+}
+@media only screen and (max-width: 767px) {
+  .form-wrapper .inputs--left {
+    margin: 0px 30px;
+  }
+}
+.form-wrapper .inputs--right {
+  margin: 0px 30px 20px 0px;
+}
+@media only screen and (max-width: 767px) {
+  .form-wrapper .inputs--right {
+    margin: 0px 30px;
+  }
+}
+.form-wrapper input {
+  margin-top: 10px;
 }
 
 #positions {

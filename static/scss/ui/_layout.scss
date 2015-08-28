@@ -368,7 +368,7 @@ background-repeat: no-repeat;
 //  6. ENLIST SECTION
 //------------------------------------//
 
-#enlist {
+.enlist {
 	background: url(../images/people.jpg);
 	background-size:cover;
 	background-position: center center;
@@ -388,19 +388,40 @@ background-repeat: no-repeat;
 	border:none;
 }
 
-#enlist-box {
- 	border: 3px solid $white;
-  border-radius: 2px;
-	display: table-cell;
-	vertical-align: middle;
-	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.enlist-box {
+	border: 3px solid #fff;
+	//border-radius: 36px;
+	padding: 0px 28px;
+	margin: 20px auto;
+	display: inline-block;
 	a {
 		font-size: 1.5em;
 	}
 }
+
+.form-wrapper {
+	// margin: 100px auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	.inputs--left{
+		margin: 0px 0px 20px 30px;
+		@media only screen and (max-width: 767px){
+			margin: 0px 30px;
+		}
+	}
+	.inputs--right{
+		margin: 0px 30px 20px 0px;
+		@media only screen and (max-width: 767px){
+			margin: 0px 30px;
+		}
+	}
+	input {
+		margin-top: 10px;
+	}
+}
+
 
 // END ENLIST SECTION
 
