@@ -76,17 +76,20 @@ body, html {
 	}
 }
 
-#who-we-are-copy {
+.who-we-are-copy {
 	 position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     color: $white;
-     width:100%;
-     font-family: $font-body;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: $white;
+   width:100%;
+   font-family: $font-body;
 	 font-size:16px;
+	 p {
+		 margin-bottom: 0;
+	 }
 
-	 #who-we-are-content {
+	 .who-we-are-content {
 		 padding-top: 50px;
 		 h2 {
 			 font-size:1em;

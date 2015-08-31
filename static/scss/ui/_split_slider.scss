@@ -10,7 +10,7 @@
     text-align: center;
   }
 
-  #what-do-left{
+  .what-do-left{
     float:left;
     position: relative;
     width: 50%;
@@ -24,22 +24,22 @@
     }
   }
 
-  #what-do-right{
+  .what-do-right{
     float:right;
     position: relative;
     width: 50%;
     height:100%;
-      ul{
-    left:10%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    font-weight: bold;
+    ul {
+      left:10%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
-
   }
 
 
-  #what-dont-left{
+  .what-dont-left{
     float:right;
     position: relative;
     width: 50%;
@@ -53,11 +53,12 @@
     }
   }
 
-  #what-dont-right{
+  .what-dont-right{
     float:left;
     position: relative;
     width: 50%;
     height:100%;
+    font-weight: bold;
       ul{
     right:10%;
     position: absolute;

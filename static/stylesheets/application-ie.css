@@ -1070,7 +1070,7 @@ body, html {
   text-align: center;
 }
 
-#who-we-are-copy {
+.who-we-are-copy {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1080,10 +1080,13 @@ body, html {
   font-family: "Gotham-Rnd-Light", Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
-#who-we-are-copy #who-we-are-content {
+.who-we-are-copy p {
+  margin-bottom: 0;
+}
+.who-we-are-copy .who-we-are-content {
   padding-top: 50px;
 }
-#who-we-are-copy #who-we-are-content h2 {
+.who-we-are-copy .who-we-are-content h2 {
   font-size: 1em;
   word-spacing: 1px;
   letter-spacing: 2px;
@@ -2667,39 +2670,40 @@ html.remodal-is-locked {
   text-align: center;
 }
 
-#what-do-left {
+.what-do-left {
   float: left;
   position: relative;
   width: 50%;
   height: 100%;
 }
-#what-do-left h2 {
+.what-do-left h2 {
   position: absolute;
   top: 50%;
   left: 25%;
   transform: translateY(-50%);
 }
 
-#what-do-right {
+.what-do-right {
   float: right;
   position: relative;
   width: 50%;
   height: 100%;
+  font-weight: bold;
 }
-#what-do-right ul {
+.what-do-right ul {
   left: 10%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-#what-dont-left {
+.what-dont-left {
   float: right;
   position: relative;
   width: 50%;
   height: 100%;
 }
-#what-dont-left h2 {
+.what-dont-left h2 {
   width: 60%;
   position: absolute;
   top: 50%;
@@ -2707,13 +2711,14 @@ html.remodal-is-locked {
   transform: translateY(-50%);
 }
 
-#what-dont-right {
+.what-dont-right {
   float: left;
   position: relative;
   width: 50%;
   height: 100%;
+  font-weight: bold;
 }
-#what-dont-right ul {
+.what-dont-right ul {
   right: 10%;
   position: absolute;
   top: 50%;
