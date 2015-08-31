@@ -1,3 +1,29 @@
+.split__left {
+  background-image: url(../images/full_left_iss.jpg);
+  background-size: cover;
+}
+
+.split__right {
+  background-image: url(../images/full_right_iss.jpg);
+  background-size: cover;
+}
+
+.split__left__inner {
+  padding: 2em 0;
+  color: $white;
+  ul {
+    font-weight: bold;
+  }
+}
+
+.split__right__inner {
+  padding: 2em 0;
+  color: $white;
+  ul {
+    font-weight: bold;
+  }
+}
+
 @include media-query(lap-and-up){
   .what-we-do {
     margin: 0;

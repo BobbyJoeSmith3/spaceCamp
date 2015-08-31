@@ -2659,6 +2659,32 @@ html.remodal-is-locked {
     opacity: 0;
   }
 }
+.split__left {
+  background-image: url(../images/full_left_iss.jpg);
+  background-size: cover;
+}
+
+.split__right {
+  background-image: url(../images/full_right_iss.jpg);
+  background-size: cover;
+}
+
+.split__left__inner {
+  padding: 2em 0;
+  color: #fff;
+}
+.split__left__inner ul {
+  font-weight: bold;
+}
+
+.split__right__inner {
+  padding: 2em 0;
+  color: #fff;
+}
+.split__right__inner ul {
+  font-weight: bold;
+}
+
 .what-we-do {
   margin: 0;
   height: 100%;
