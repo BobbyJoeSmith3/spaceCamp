@@ -1392,7 +1392,7 @@ body, html {
   margin-top: 10px;
 }
 
-#positions {
+.positions {
   background: url(../images/positions.jpg);
   background-size: cover;
   background-position: center center;
@@ -1400,32 +1400,43 @@ body, html {
   position: relative;
   overflow: hidden;
 }
-#positions h2 {
+.positions h2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#instructions {
+.process-boxes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.process-boxes .process-box {
+  margin-bottom: 80px;
+}
+
+.instructions {
   background: url(../images/apply.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
+  color: #fff;
 }
-#instructions h2 {
+.instructions h2 {
   padding-top: 48px;
 }
-#instructions #process-boxes {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.instructions .content-wrapper {
+  padding: 6em;
 }
-#instructions #process-boxes .process-box {
-  margin-bottom: 80px;
+.instructions ul {
+  list-style-type: disc;
+}
+.instructions p {
+  text-align: justify;
 }
 
 input {

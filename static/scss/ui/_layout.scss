@@ -429,11 +429,11 @@ background-repeat: no-repeat;
 // END ENLIST SECTION
 
 //------------------------------------//
-//  7. Application Instructions
+//  7. Available Positions
 //------------------------------------//
 
 
-#positions {
+.positions {
 	background: url(../images/positions.jpg);
 	background-size:cover;
 	background-position: center center;
@@ -447,6 +447,15 @@ background-repeat: no-repeat;
   transform: translate(-50%, -50%);
 	}
 }
+.process-boxes {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+	.process-box {
+		 margin-bottom:80px;
+	}
+}
 
 // END APPLICATION INSTRUCTIONS SECTION
 
@@ -454,25 +463,27 @@ background-repeat: no-repeat;
 //  8. Application Instructions
 //------------------------------------//
 
-#instructions {
+.instructions {
 	background: url(../images/apply.jpg);
 	background-size:cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	position: relative;
 	overflow:hidden;
+	color: $white;
 	h2 {
 		padding-top:48px;
 	}
-	#process-boxes {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-		.process-box {
-			 margin-bottom:80px;
-		}
+	.content-wrapper {
+		padding: 6em;
 	}
+	ul {
+		list-style-type: disc;
+	}
+	p {
+		text-align: justify;
+	}
+
 }
 
 input {
