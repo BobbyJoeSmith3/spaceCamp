@@ -1452,10 +1452,7 @@ body, html {
   overflow: hidden;
 }
 .positions h2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-top: 1em;
 }
 
 .process-boxes {
@@ -1478,7 +1475,7 @@ body, html {
   color: #fff;
 }
 .instructions h2 {
-  padding-top: 48px;
+  padding-top: 1em;
 }
 .instructions .content-wrapper {
   padding: 6em;

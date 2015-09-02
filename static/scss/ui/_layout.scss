@@ -441,10 +441,7 @@ background-repeat: no-repeat;
 	position: relative;
 	overflow:hidden;
 	h2 {
-	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	padding-top: 1em;
 	}
 }
 .process-boxes {
@@ -472,7 +469,7 @@ transform: translate(-50%, -50%);
 	overflow:hidden;
 	color: $white;
 	h2 {
-		padding-top:48px;
+		padding-top: 1em;
 	}
 	.content-wrapper {
 		padding: 6em;
