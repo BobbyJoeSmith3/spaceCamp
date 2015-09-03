@@ -20,7 +20,7 @@ The date for the flipclock countdown timer is set in `js/vendor/main.js` on line
 `var futureDate  = new Date(2015, 08, 28, 17, 30);`
 
 ####NOTE:
-Only set the date for the clock to countdown from so that there are three digits at most in the hours section, otherwise spacing will be off. 
+Only set the date for the clock to countdown from so that there are three digits at most in the hours section, otherwise spacing will be off.
 
 Styling
 =========
@@ -34,6 +34,22 @@ spaceCamp-countdown: http://devo.space150.com/bjs3/spacecamp/spaceCamp-countdown
 
 A detailed history of the development of this site can be found at:
 https://github.com/BobbyJoeSmith3/spaceCamp
+
+To-Do
+==========
+There is still a considerable amount of work that needs to be done on the site once logistics for the program are figured out.
+
+spaceCamp.html:
+-Link to final spaceCamp video needs to be inserted in the modal in space camp section.
+-Billy needs to write a note about space150 to applicants, and that copy needs to be included in the captain's log section.
+-Forms for enlist section need to be connected to a database, and the enlist button needs to the be submit button for the forms. The idea behind the form was to keep a database of candidates who visit the site outside of the application period so that we can notify them when the application opens up, or when special events or information becomes available throughout the year.
+
+spaceCamp-countdown:
+-Countdown clock needs to be set to the date the applications are due. The idea was to keep the same application process where candidates submit a response to a prompt in 150 hours. The countdown will show them how much time is left befor their work is done.
+-Link to final spaceCamp video needs to be inserted in the modal in space camp section.
+-Billy needs to write a note about space150 to applicants, and that copy needs to be included in the captain's log section.
+-The Available Positions section still needs to be designed. This section is meant to show potential applicants what positions are available, and give a job description for each one. We did not build this section because it wasn't certain what the need will be for next year.
+-Copy for how to apply to the program needs to be included in the application instructions section.
 
 Squad
 ==========
