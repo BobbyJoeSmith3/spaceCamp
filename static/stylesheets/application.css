@@ -1444,6 +1444,9 @@ body, html {
 .form-wrapper input {
   margin-top: 10px;
 }
+.form-wrapper select {
+  margin-top: 10px;
+}
 
 .positions {
   background: url(../images/positions.jpg);
