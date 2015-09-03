@@ -1,3 +1,34 @@
+About
+=========
+
+spaceCamp is an online platform for aspiring space cadets (otherwise affectionately known as interns) to learn about and apply for the out-of-this-world internship program at the independent digital advertising agency space150. Like the International Space Station, spaceCamp.html is the client facing page that is designed to be available year-round to be visited by sentient beings around the world, while spaceCamp-countdown.html is meant to be deployed only during the application period.
+
+Squad
+==========
+Kadi Jambois - UX
+Dennis Sengthong - Design and Development
+Bobby Joe Smith III - Lead Programmer, Photography, and Videography
+Michael Collins - Copy
+Ethan Perushek - Copy and Project Management
+Molli Bichrt - Project Management
+Josh Lundquist - Direction, Animation, and Video Editing
+
+Set-up
+=========
+
+spaceCamp utilizes spaceBase, the Sass-based responsive CSS framework designed by top engineers at space150. Configuration instructions are included below.
+
+spaceCamp has also taken advantage of a variety of components to provide a dynamic and interactive experience. Utilized plug-ins include:
+-covervid (https://github.com/stefanerickson/covervid)
+-FlipClock (https://github.com/objectivehtml/FlipClock)
+-Remodal (https://github.com/VodkaBears/Remodal/releases/tag/1.0.3)
+-Vertical Fixed Navigation (http://codyhouse.co/gem/vertical-fixed-navigation/)
+
+Styling
+=========
+The main styling for the page can be found in scss/ui/layout.scss. Styling associated with a specific plug-in can be found with it's own corresponding sass file, vertical-fixed-navigation.scss for example.
+
+
 spaceBase
 =========
 

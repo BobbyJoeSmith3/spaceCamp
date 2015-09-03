@@ -68,8 +68,6 @@ body, html {
 	margin: 0 auto;
 	text-align: center;
 
-	//transform:scale(1.25,1.25);
-
 	@include media-query(below-lap) {
 		display: inline-block;
 	  transform:scale(.5,.5) translateX(-50%);
@@ -105,7 +103,7 @@ body, html {
 //  2. WHAT WE DO
 //------------------------------------//
 
-// _/split_slider.scss
+// Look in _/split_slider.scss
 
 
 //END WHAT WE DO SECTION
