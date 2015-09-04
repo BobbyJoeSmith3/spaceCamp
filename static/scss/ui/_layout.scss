@@ -447,13 +447,21 @@ background-repeat: no-repeat;
 	padding-top: 1em;
 	}
 }
-.process-boxes {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-	.process-box {
-		 margin-bottom:80px;
+.position-boxes {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	.position-box {
+		position: relative;
+		width: 135px;
+		height: 35px;
+		margin-bottom: 25px;
+		border: 3px solid $white;
+		display: inline-block;
+		text-align: center;
+		color: $white;
+		clear:both;
 	}
 }
 
